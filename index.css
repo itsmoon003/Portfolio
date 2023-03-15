@@ -408,7 +408,7 @@ html {
 	height: 450px;
 	width: 400px;
 	object-fit: cover;
-	border-radius: 6px;
+	border-radius:5%;
   
   }
   .about .about-content .right {
@@ -441,12 +441,25 @@ html {
 	color: #4078c0;
 	background: none;
   }
-  
 
+ #tech1{
+	
+	width:80%;
+	/* border: 2px solid rgba(0, 0, 0, 0.05); */
+	height: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	margin: auto;
+	gap:50px;
+	font: 1em sans-serif;
+ }
+ #tech1>div{
+	text-align: center;
+ }
   /* skills section styling */
 .skills-images img {
-	height: 140px;
-	width: 150px;
+	height: 120px;
 	/* object-fit: cover; */
 	border-radius: 5%;
 	/* border: 5px solid #4078c0; */
@@ -531,6 +544,60 @@ html {
 	width: 70%;
   }
   
+  
+
+  .services,
+  .project {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.05);
+  }
+  .services .title::before,
+  .project .title::before {
+	background: #fff;
+  }ect .title::after {
+	background: rgba(0, 0, 0, 0.05);
+	/* content: "what i provide"; */
+  }
+
+  .services .serv-content .card {
+	width: calc(33% - 20px);
+	background: #222;
+	text-align: center;
+	border-radius: 6px;
+	padding: 50px 25px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin-top: 10px;
+  }
+  .services .serv-content .card:hover {
+	background: rgb(4,53,3);
+  }
+  .services .serv-content .card .box {
+	transition: all 0.3s ease;
+  }
+  .services .serv-content .card:hover .box {
+	transform: scale(1.05);
+  }
+  .services .serv-content .card i {
+	font-size: 50px;
+	color: #4078c0;
+	transition: color 0.3s ease;
+  }
+  .services .serv-content .card:hover i {
+	color: #fff;
+  }
+  .services .serv-content .card .text {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+  }
+  
+
+.box>img{
+	width: 25%;
+
+}
+
   #projects-1,#projects-2,#projects-3{
 	margin-bottom: 70px;
   }
@@ -638,6 +705,7 @@ html {
   /* contact section styling */
   .contact .contact-content .column {
 	width: calc(50% - 30px);
+	margin: auto;
   }
   .contact .contact-content .text {
 	font-size: 20px;
@@ -649,10 +717,13 @@ html {
   }
   .contact .contact-content .left .icons {
 	margin: 10px 0;
+	display: flex;
+	margin: auto;
+	justify-content: space-evenly;
   }
   .contact .contact-content .row {
 	display: flex;
-	height: 65px;
+	height:100px;
 	align-items: center;
   }
   .contact .contact-content .row .info {
@@ -681,6 +752,7 @@ html {
   .contact .contact-content .info .sub-title {
 	color: #333;
   }
+  
   
   /* footer section styling */
   footer {
