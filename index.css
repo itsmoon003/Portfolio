@@ -752,7 +752,10 @@ html {
   .contact .contact-content .info .sub-title {
 	color: #333;
   }
-  
+  ion-icon{
+	height: 50px;
+	color: black;
+  }
   
   /* footer section styling */
   footer {
@@ -771,26 +774,6 @@ html {
   
   
   /* responsive media query start */
-  @media all and (min-width: 320px) and (max-width: 767px) {
-  
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
-  }
-  
-  
-  @media all and (min-width: 768px) and (max-width: 1024px){
-  
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
-  }
   
   
   @media (max-width: 1104px) {
@@ -798,27 +781,15 @@ html {
 	  height: 400px;
 	  width: 350px;
 	}
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
   }
   
   @media (max-width: 991px) {
 	.max-width {
 	  padding: 0 50px;
 	}
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
   
   }
-  @media (max-width: 947px) {
+  @media (max-width: 947px) and (min-width: 550px) {
 	.menu-btn {
 	  display: block;
 	  z-index: 999;
@@ -886,12 +857,6 @@ html {
 	  width: 100%;
 	  margin-bottom: 35px;
 	}
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
   
   
   }
@@ -913,12 +878,6 @@ html {
 	  width: 100%;
 	}
   
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(2,1fr);
-	
-	}
   
 	.project-s{
 	  padding: 20px;
@@ -930,11 +889,6 @@ html {
   }
   
   @media (max-width: 500px) {
-  
-	#datawork{
-	  display:grid;
-	  grid-template-columns: repeat(1,1fr);
-	}
 	.home .home-content .text-2 {
 	  font-size: 50px;
 	}
@@ -968,12 +922,6 @@ html {
 	  border-radius: 50%;
 	}
   
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(1,1fr);
-	
-	}
   
 	.project-s{
   
