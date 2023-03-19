@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 
 body{
   background-color:  rgb(224, 235, 255);
@@ -754,7 +754,7 @@ html {
   }
   ion-icon{
 	height: 50px;
-	color: black;
+	color: rgb(29, 75, 88);
   }
   
   /* footer section styling */
@@ -775,11 +775,39 @@ html {
   
   /* responsive media query start */
   
+
+  @media all and (min-width: 320px) and (max-width: 767px) {
+
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(3,1fr);
+	
+	}
+  }
+  
+  
+  @media all and (min-width: 768px) and (max-width: 1024px){
+  
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(3,1fr);
+	
+	}
+  }
+  
   
   @media (max-width: 1104px) {
 	.about .about-content .left img {
 	  height: 400px;
 	  width: 350px;
+	}
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(3,1fr);
+	
 	}
   }
   
@@ -787,9 +815,15 @@ html {
 	.max-width {
 	  padding: 0 50px;
 	}
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(3,1fr);
+	
+	}
   
   }
-  @media (max-width: 947px) and (min-width: 550px) {
+  @media (max-width: 947px) {
 	.menu-btn {
 	  display: block;
 	  z-index: 999;
@@ -804,11 +838,11 @@ html {
 	  left: -100%;
 	  top: 0;
 	  background: rgb(29, 75, 88);
-	background: linear-gradient(
-	  90deg,
-	  rgb(29, 75, 88) 23%,
-	  rgb(5, 6, 7) 70%
-	);
+	  background: linear-gradient(
+		90deg,
+		rgb(29, 75, 88) 23%,
+		rgb(5, 6, 7) 70%
+	  );
 	  text-align: center;
 	  padding-top: 80px;
 	  transition: all 0.3s ease;
@@ -857,6 +891,24 @@ html {
 	  width: 100%;
 	  margin-bottom: 35px;
 	}
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(3,1fr);
+	
+	}
+	#tech1{
+	
+		width:80%;
+		/* border: 2px solid rgba(0, 0, 0, 0.05); */
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		margin: auto;
+		gap:50px;
+		font: 1em sans-serif;
+	 }
   
   
   }
@@ -878,6 +930,24 @@ html {
 	  width: 100%;
 	}
   
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(2,1fr);
+	
+	}
+	#tech1{
+	
+		width:80%;
+		/* border: 2px solid rgba(0, 0, 0, 0.05); */
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		margin: auto;
+		gap:50px;
+		font: 1em sans-serif;
+	 }
   
 	.project-s{
 	  padding: 20px;
@@ -888,7 +958,12 @@ html {
 	}
   }
   
-  @media (max-width: 500px) {
+  @media only screen and (max-width: 425px){
+  
+	#datawork{
+	  display:grid;
+	  grid-template-columns: repeat(1,1fr);
+	}
 	.home .home-content .text-2 {
 	  font-size: 50px;
 	}
@@ -922,6 +997,24 @@ html {
 	  border-radius: 50%;
 	}
   
+	#datawork{
+   
+	  display: grid; 
+	  grid-template-columns: repeat(1,1fr);
+	
+	}
+	#tech1{
+	
+		width:80%;
+		/* border: 2px solid rgba(0, 0, 0, 0.05); */
+		height: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		margin: auto;
+		gap:50px;
+		font: 1em sans-serif;
+	 }
   
 	.project-s{
   
@@ -958,6 +1051,12 @@ html {
 	transition: all 0.3s ease;
 	margin-left: 20px;
   }
- 
-}
+  .kun{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  }
   
+  
+ 
