@@ -121,15 +121,15 @@ html {
   footer {
 	font-family: "Poppins", sans-serif;
   }
-  .about .about-content,
-  .services .serv-content,
-  .skills .skills-content,
+ 
   .contact .contact-content {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
   }
+  
+  
   section .title {
 	position: relative;
 	text-align: center;
@@ -402,22 +402,26 @@ html {
   content: "who i am";
 } */
 .about .about-content .left {
-	width: 45%;
+	margin: auto;
+	text-align: center;
   }
   .about .about-content .left img {
-	height: 450px;
-	width: 400px;
+	height: auto;
+	width:400px;
 	object-fit: cover;
 	border-radius:5%;
-  
+	margin: auto;
+	text-align: center;
+
   }
   .about .about-content .right {
-	width: 55%;
+	width: 100%;
   }
   .about .about-content .right .text {
-	font-size: 25px;
+	font-size: 35px;
 	font-weight: 600;
 	margin-bottom: 10px;
+	margin-top: 100px;
   }
   .about .about-content .right .text span {
 	color: rgb(4,53,3);
@@ -558,17 +562,8 @@ html {
 	background: rgba(0, 0, 0, 0.05);
 	/* content: "what i provide"; */
   }
+ 
 
-  .services .serv-content .card {
-	width: calc(33% - 20px);
-	background: #222;
-	text-align: center;
-	border-radius: 6px;
-	padding: 50px 25px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	margin-top: 10px;
-  }
   .services .serv-content .card:hover {
 	background: rgb(4,53,3);
   }
@@ -771,106 +766,16 @@ html {
   footer span a:hover {
 	text-decoration: underline;
   }
-  
-  
-  /* responsive media query start */
-  
 
-  @media all and (min-width: 320px) and (max-width: 767px) {
-
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
+  @media (max-width: 2000px){
 	
-	}
-  }
-  
-  
-  @media all and (min-width: 768px) and (max-width: 1024px){
-  
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
 	
-	}
-  }
-  
-  
-  @media (max-width: 1104px) {
-	.about .about-content .left img {
-	  height: 400px;
-	  width: 350px;
-	}
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
-  }
-  
-  @media (max-width: 991px) {
-	.max-width {
-	  padding: 0 50px;
-	}
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(3,1fr);
-	
-	}
-  
-  }
-  @media (max-width: 947px) {
-	.menu-btn {
-	  display: block;
-	  z-index: 999;
-	}
-	.menu-btn i.active:before {
-	  content: "\f00d";
-	}
-	.navbar .menu {
-	  position: fixed;
-	  height: 100vh;
-	  width: 100%;
-	  left: -100%;
-	  top: 0;
-	  background: rgb(29, 75, 88);
-	  background: linear-gradient(
-		90deg,
-		rgb(29, 75, 88) 23%,
-		rgb(5, 6, 7) 70%
-	  );
-	  text-align: center;
-	  padding-top: 80px;
-	  transition: all 0.3s ease;
-	}
-	.navbar .menu.active {
-	  left: 0;
-	}
-	.navbar .menu li {
-	  display: block;
-	}
-	.navbar .menu li a {
-	  display: inline-block;
-	  margin: 20px 0;
-	  font-size: 25px;
-	}
-	.home .home-content .text-2 {
-	  font-size: 70px;
-	}
-	.home .home-content .text-3 {
-	  font-size: 35px;
-	}
-	.home .home-content a {
-	  font-size: 23px;
-	  padding: 10px 30px;
-	}
-	.max-width {
-	  max-width: 930px;
-	}
+    .about .about-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+		gap:30px;
+		width: 100%;
+      }
 	.about .about-content .column {
 	  width: 100%;
 	}
@@ -881,11 +786,29 @@ html {
 	}
 	.about .about-content .right {
 	  flex: 100%;
+
 	}
+	
 	.services .serv-content .card {
-	  width: calc(50% - 10px);
-	  margin-bottom: 20px;
-	}
+		width: calc(33% - 20px);
+		background: #222;
+		text-align: center;
+		border-radius: 6px;
+		padding: 50px 25px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		margin-top: 10px;
+	  }
+    .services .serv-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+		gap: 30px;
+      }
+	  .services .serv-content .card {
+        width: 100%;
+      }
+	
+     
 	.skills .skills-content .column,
 	.contact .contact-content .column {
 	  width: 100%;
@@ -900,163 +823,140 @@ html {
 	#tech1{
 	
 		width:80%;
-		/* border: 2px solid rgba(0, 0, 0, 0.05); */
+		
 		height: auto;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		justify-content: space-between;
 		margin: auto;
 		gap:50px;
 		font: 1em sans-serif;
 	 }
   
+	 .contact .contact-content .left .icons {
+		margin: 10px 0;
+		display: flex;
+		margin: auto;
+		width: 70%;
+		justify-content: space-evenly;
+	  }
+	  .contact .contact-content .column {
+		width:  70%;
+		margin: auto;
+	  }
+  } 
   
-  }
-  
-  @media (max-width: 690px) {
+  @media (max-width: 980px){
+	.menu-btn {
+		display: block;
+		z-index: 999;
+	  }
+	  .menu-btn i.active:before {
+		content: "\f00d";
+	  }
+	  .navbar .menu {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+		left: -100%;
+		top: 0;
+		background: rgb(29, 75, 88);
+		background: linear-gradient(
+		  90deg,
+		  rgb(29, 75, 88) 23%,
+		  rgb(5, 6, 7) 70%
+		);
+		text-align: center;
+		padding-top: 80px;
+		transition: all 0.3s ease;
+	  }
+	  .navbar .menu.active {
+		left: 0;
+	  }
+	  .navbar .menu li {
+		display: block;
+	  }
+	  .navbar .menu li a {
+		display: inline-block;
+		margin: 20px 0;
+		font-size: 25px;
+	  }
 	.max-width {
-	  padding: 0 23px;
-	}
-	.home .home-content .text-2 {
-	  font-size: 60px;
-	}
-	.home .home-content .text-3 {
-	  font-size: 32px;
-	}
-	.home .home-content a {
-	  font-size: 20px;
-	}
+        padding: 0 23px;
+      }
+      .home .home-content .text-2 {
+        font-size: 60px;
+      }
+      .home .home-content .text-3 {
+        font-size: 32px;
+      }
+      .home .home-content a {
+        font-size: 20px;
+      }
+      .services .serv-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+		gap: 30px;
+      }
+	  .services .serv-content .card {
+        width: 100%;
+      }
 	.services .serv-content .card {
 	  width: 100%;
+	  margin-bottom: 20px;
+      align-items: center;
+        justify-content: space-between;
+		background: #222;text-align: center;
+		border-radius: 6px;
+		padding: 50px 25px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		margin-top: 10px;
 	}
+     
+      #tech1{
+      
+          width:80%;
+          /* border: 2px solid rgba(0, 0, 0, 0.05); */
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: space-between;
+          margin: auto;
+          gap:50px;
+          font: 1em sans-serif;
+       }
+    
+      .project-s{
+        padding: 20px;
+        /* width: 90%; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+      }
+}
+@media only screen and (max-width: 625px){
+	.about .about-content{
+        display: block;
+      }
+	.services .serv-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+		gap: 30px;
+      }
+    
+}
+
+
   
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(2,1fr);
-	
-	}
-	#tech1{
-	
-		width:80%;
-		/* border: 2px solid rgba(0, 0, 0, 0.05); */
-		height: auto;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: space-between;
-		margin: auto;
-		gap:50px;
-		font: 1em sans-serif;
-	 }
+
+ 
   
-	.project-s{
-	  padding: 20px;
-	  /* width: 90%; */
-	  display: grid;
-	  grid-template-columns: repeat(1,1fr);
-	  gap: 50px;
-	}
-  }
   
-  @media only screen and (max-width: 425px){
+ 
   
-	#datawork{
-	  display:grid;
-	  grid-template-columns: repeat(1,1fr);
-	}
-	.home .home-content .text-2 {
-	  font-size: 50px;
-	}
-	.home .home-content .text-3 {
-	  font-size: 27px;
-	}
-	.about .about-content .right .text,
-	.skills .skills-content .left .text {
-	  font-size: 19px;
-	}
-	.contact .right form .fields {
-	  flex-direction: column;
-	}
-	.contact .right form .name,
-	.contact .right form .email {
-	  margin: 0;
-	}
-	.right form .error-box {
-	  width: 150px;
-	}
-	.scroll-up-btn {
-	  right: 15px;
-	  bottom: 15px;
-	  height: 38px;
-	  width: 35px;
-	  font-size: 23px;
-	  line-height: 38px;
-	}
-	.linkpanchi>a>img{
-	  width: 50%;
-	  border-radius: 50%;
-	}
+ 
   
-	#datawork{
-   
-	  display: grid; 
-	  grid-template-columns: repeat(1,1fr);
-	
-	}
-	#tech1{
-	
-		width:80%;
-		/* border: 2px solid rgba(0, 0, 0, 0.05); */
-		height: auto;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		justify-content: space-between;
-		margin: auto;
-		gap:50px;
-		font: 1em sans-serif;
-	 }
-  
-	.project-s{
-  
-	  /* width: 70%; */
-	  display: grid;
-	  grid-template-columns: repeat(1,1fr);
-	
-	}
-	.project-s>.image{
-	  width: 100%;
-	}
-	.project-s>.paragraph{
-	  width: 100%;
-	}
-  .linkpanchi{
-	margin-top: 50px;
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-  }
-  
-  .project-s>.paragraph>div>a{
-	border: 1px solid #5687C7;
-	display: flex;
-	gap: 10px;
-	color: white;
-	/* display: inline-block; */
-	background:#5687C7 ;
-	color: white;
-	font-size: 12px;
-	padding: 10px  16px;
-	margin-top: 20px;
-	border-radius:6px ;
-	border: 2px solid #5687C7;
-	transition: all 0.3s ease;
-	margin-left: 20px;
-  }
-  .kun{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  }
   
   
  
